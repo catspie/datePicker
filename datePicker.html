@@ -4,13 +4,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>제이쿼리 위젯 달력 사용하기</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script id="basic">
     $( function() {
       $( "#datepicker" ).datepicker();
     } );
+    $(function() {
+        $("#datepicker1, #datepicker2, #datepicker3").datepicker({
+            dateFormat: 'yy.mm.dd'
+        });
+    });
     </script>
   </head>
   <body>
@@ -21,12 +25,7 @@
     달력: <input type="text" id="datepicker1">
    <!-- 3 -->
     <p>조회기간:
-        <input type="text" id="datepicker1"> ~ <input type="text" id="datepicker2">
-    </p>
-    <!-- 4 -->
-    <p>조회기간:
-        <input type="text" id="datepicker1"> ~
-        <input type="text" id="datepicker2">
+        <input type="text" id="datepicker2"> ~ <input type="text" id="datepicker3">
     </p>
   </body>
 </html>
@@ -43,17 +42,4 @@
         showMonthAfterYear: true,
         yearSuffix: '년'
     });
-
-    $(function() {
-        $("#datepicker1").datepicker();
-    });
-
-</script>
-<script id="select">
-    $(function() {
-        $("#datepicker1, #datepicker2").datepicker({
-            dateFormat: 'yy.mm.dd'
-        });
-    });
-
 </script>
