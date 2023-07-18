@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>제이쿼리 위젯 달력 사용하기</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script id="basic">
@@ -18,15 +19,23 @@
     </script>
   </head>
   <body>
-
-    <!-- 1 -->
-   <p>Date: <input type="text" id="datepicker"></p>
-   <!-- 2 -->
-    달력: <input type="text" id="datepicker1">
-   <!-- 3 -->
-    <p>조회기간:
-        <input type="text" id="datepicker2"> ~ <input type="text" id="datepicker3">
-    </p>
+    <div class="container">
+      <h3>📆날짜를 지정해보세요</h3>
+      <div class="picker">
+        <!-- 1 -->
+        <p>Date: <input type="text" id="datepicker"></p>
+      </div>
+      <div class="picker">  
+        <!-- 2 -->
+        달력: <input type="text" id="datepicker1">
+      </div>  
+      <div class="picker">
+        <!-- 3 -->
+        <p>조회기간:
+            <input type="text" id="datepicker2"> ~ <input type="text" id="datepicker3">
+        </p>
+      </div>
+    </div>    
   </body>
 </html>
 <script id="ko">
