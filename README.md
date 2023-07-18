@@ -19,7 +19,7 @@
 - ![image](https://github.com/catspie/datePicker/assets/102503668/5f1bcb6f-18fd-4d1f-b674-bbc9ca58e189)
 
 3. 설정 (custom)
-- datepicker 한국어 설정 : setDefualts
+- datepicker 한국어 설정 : setDefault
 - 조회기간 : date1, date2 id 2개 생성
 
 # 참고 블로그 
